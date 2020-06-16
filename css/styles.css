@@ -34,10 +34,16 @@ address{
 }
 
 body{
-    /* padding:50px 0px 0px 0px; */
+    padding:50px 0px 0px 0px; 
     z-index:0;
 }
 
 .navbar-dark {
      background-color: #512DA8;
+}
+
+.reserve-table {
+     background-color: RGB(253,192,47);
+	 color:white;
+	 font-weight:bold
 }
