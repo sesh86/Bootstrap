@@ -1,0 +1,20 @@
+Install node and run the following
+
+-initiate new node project
+npm init
+
+-Install lite server
+npm install lite-server --save-dev
+
+-Change the script in package.json to
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  }
+  
+-run the node service
+npm start
+
+-add a .gitignore file and add the following to it
+node_modules

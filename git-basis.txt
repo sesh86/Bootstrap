@@ -1,0 +1,40 @@
+#Configuring git
+git --version
+git config --global user.name "Your Name"
+git config --global user.email <your email address>
+
+#You can check your default Git global configuration, you can type the following at the prompt:
+git config --list
+
+#Go to the git-test folder in your cmd window/terminal and type the following at the prompt to initialize the folder as a Git repository:
+git init
+
+#Type the following at the prompt to check your Git repository's status:
+git status
+
+#To add files to the staging area of your Git repository, type:
+git add .
+
+#To commit the current staging area to your Git repository, type:
+git commit -m "first commit"
+
+#To check the log of the commits to your Git repository, type
+git log --oneline
+
+
+#To check out the file from the next commit, find the number of the next commit using the git log, and then type the following at the prompt:
+git checkout <next commit code> <file>
+
+#To discard the effect of the previous operation and restore file to its state at the end of the third commit, type:
+git reset HEAD <file>
+git checkout -- <file>
+
+
+#At the prompt, type the following to set up your local repository to link to your online Git repository:
+git remote add origin <repository URL>
+
+#save the data to repo
+git push -u origin master
+
+#Clone a repo
+git clone <repository URL>
