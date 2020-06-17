@@ -40,8 +40,7 @@
 					<li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>       
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login</a>
+                    <a data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in"></span> Login</a>
                 </span>				
             </div>                     
         </div>
@@ -82,6 +81,66 @@
                 </div>
             </div>
         </div>
+    </div>	
+	
+    <div id="registerModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"><b>Reserve a Table</b></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+					<div class="row row-header">
+						<div class="col-12 col-sm-3">Number of guests</div>
+						<div class="col-12 col-sm-9">
+							<input type="radio" name="no_of_guests" class="m-1">1
+							<input type="radio" name="no_of_guests" class="m-1">2
+							<input type="radio" name="no_of_guests" class="m-1">3
+							<input type="radio" name="no_of_guests" class="m-1">4
+							<input type="radio" name="no_of_guests" class="m-1">5
+							<input type="radio" name="no_of_guests" class="m-1">6
+						</div>						
+					</div>
+					<br>
+					<div class="row row-header">
+						<div class="col-12 col-sm-3">Section</div>
+						<div class="col-12 col-sm-8">
+							<div class="btn-group btn-group-toggle" data-toggle="buttons">
+							  <label class="btn btn-success active">
+								<input type="radio" name="options" id="non-smoking" autocomplete="off" checked> Non Smoking
+							  </label>
+							  <label class="btn btn-danger">
+								<input type="radio" name="options" id="smoking" autocomplete="off"> Smoking
+							  </label>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row row-header">
+						<div class="col-12 col-sm-3">Date and Time</div>
+						<div class="col-12 col-sm-4"><input class="form-control" placeholder="Date"></div>
+						<div class="col-12 col-sm-4"><input class="form-control" placeholder="Time"></div>
+					</div>	
+					<br>
+					<div class="row row-header">
+						<div class="col-12 col-sm-3">
+						</div>
+						<div class="col-12 col-sm-4">
+							<button class="btn btn-primary">Reserve</button>
+						</div>
+					</div>							
+			</div>		
+			</div>
+			<div class="col-12 col-sm-2">
+			</div>
+		</div>
+		<br><br>
+    </div>
+                </div>
+            </div>
+        </div>
     </div>
 	
     <header class="jumbotron">
@@ -95,7 +154,8 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom" href="#reserveform">Reserve Table</a>
+                    <a data-toggle="modal" data-target="#registerModal" role="button" class="btn btn-block nav-link btn-warning">
+					Reserve Table</a>
                 </div				
             </div>
         </div>
@@ -148,55 +208,7 @@
 
 
 	   
-    <div class="mt-3 container">
-		<div class="row row-header" id="reserve-table">
-			<div class="col-12 col-sm-2">
-			</div>
-			<div class="col-12 col-sm-8">
-			<div class="card">
-				<div class="card-header reserve-table">Reserve a table</div>
-				<div class="card-body">
-					<div class="row row-header">
-						<div class="col-12 col-sm-3">
-							Number of guests
-						</div>
-						<div class="col-12 col-sm-9">
-							<input type="radio" name="no_of_guests" class="m-1">1
-							<input type="radio" name="no_of_guests" class="m-1">2
-							<input type="radio" name="no_of_guests" class="m-1">3
-							<input type="radio" name="no_of_guests" class="m-1">4
-							<input type="radio" name="no_of_guests" class="m-1">5
-							<input type="radio" name="no_of_guests" class="m-1">6
-						</div>						
-					</div>
-					<br>
-					<div class="row row-header">
-						<div class="col-12 col-sm-3">
-							Date and Time
-						</div>
-						<div class="col-12 col-sm-4">
-							<input class="form-control" placeholder="Date">
-						</div>
-						<div class="col-12 col-sm-4">
-							<input class="form-control" placeholder="Time">
-						</div>
-					</div>	
-					<br>
-					<div class="row row-header">
-						<div class="col-12 col-sm-3">
-						</div>
-						<div class="col-12 col-sm-4">
-							<button class="btn btn-primary">Reserve</button>
-						</div>
-					</div>							
-				</div>
-			</div>		
-			</div>
-			<div class="col-12 col-sm-2">
-			</div>
-		</div>
-		<br><br>
-    </div>
+
 
     <footer class="footer">
         <div class="container">
